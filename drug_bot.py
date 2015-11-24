@@ -120,9 +120,6 @@ while 1:
     msg = answer_query()
     def sendmsg(chan , msg):
         ircsock.send(bytes("PRIVMSG "+ chan +" :"+ msg +"\n", "UTF-8"))
-    ircmsg = ircsock.recv(2048)
-    ircmsg = ircmsg.strip(bytes('\n\r', "UTF-8")) 
-    print(ircmsg) 
 
     readbuffer = readbuffer+ircsock.recv(1024).decode("UTF-8")
     temp = str.split(readbuffer, "\n")
