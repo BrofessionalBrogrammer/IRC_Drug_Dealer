@@ -5,7 +5,7 @@ This bot is an IRC game that allows you to buy and sell drugs, and saves your sc
 
 I plan to add more features in the future, but for now, here are the commands:
 
-.buy [amount] [drug]
+.buy [amount] [drug]/n
 .sell [amount] [drug]
 .check [drug OR 'money']
 
