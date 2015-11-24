@@ -101,8 +101,6 @@ server = "irc.freenode.net"
 channel = "#lainchan"
 botnick = "drug-bot"
 password = ""
-
-responses = ["test1", "test2", "test3"]
 #all bytes must be converted to UTF-8
 def joinchan(chan):
     ircsock.send(bytes("JOIN "+ chan +"\n", "UTF-8"))
